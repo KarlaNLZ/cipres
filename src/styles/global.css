@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inset-shadow-top {
+    box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el navbar */
+.navbar-text {
+    @apply text-white transition-colors duration-300;
+}
+
+.navbar-scrolled .navbar-text {
+    @apply text-gray-800;
+}
+
+.navbar-scrolled .nav-link:hover {
+    @apply text-primary;
+}
